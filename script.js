@@ -11,6 +11,11 @@ var confirmNumericCharacter;
 var confirmUpperCase;
 var confirmLowerCase;
 
+// Length of password
+function generatePassword() {
+    var confirmLegth = (prompt("Choose how many characters you would like your password to have"));
+}
+
 
 
 // Get references to the #generate element
