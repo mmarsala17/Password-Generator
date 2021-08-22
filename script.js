@@ -20,14 +20,14 @@ while(confirmLength <= 7 || confirmLength >= 129) {
     var confirmLength = (prompt("Choose how many characters you would like your password to have"));
 }
 
-var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to have special charactes");
+var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to have special characters");
 var confirmNumericCharacter = confirm("Click OK to confirm if you would like to have numeric characters");
 var confirmLowerCase = confirm("Click OK to confirm if you would like to have lowercase characters");
 var confirmUpperCase = confirm("Click OK to confirm if you would like to have uppercase characters");
 
 while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
     alert("You must choose at least one password criteria");
-    var confirmSpecialCharacter = confirm("Click ok to confir if you would like to include special characters");
+    var confirmSpecialCharacter = confirm("Click ok to confirm if you would like to have special characters");
     var confirmNumericCharacter = confirm("Click OK to confirm if you would like to have numeric characters");
     var confirmUpperCase = confirm("Click OK to confirm if you would like to have uppercase characters"); 
     var confirmLowerCase = confirm("Click OK to confirm if you would like to have lowercase characters");
