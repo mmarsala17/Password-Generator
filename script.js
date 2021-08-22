@@ -32,6 +32,26 @@ while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecial
     var confirmUpperCase = confirm("Click OK to confirm if you would like to have uppercase characters"); 
     var confirmLowerCase = confirm("Click OK to confirm if you would like to have lowercase characters");
 }
+
+var passwordCharacters = []
+
+if (confirmSpecialCharacter) {
+    passwordCharacters = passwordCharacters.concat(specialChar)
+}
+
+if (confirmNumericCharacter) {
+    passwordCharacters = passwordCharacters.concat(number)
+}
+
+if (confirmLowerCase) {
+    passwordCharacters = passwordCharacters.concat(alphaLower)
+}
+
+if (confirmUpperCase) {
+    passwordCharacters = passwordCharacters.concat(alphaUpper)
+}
+
+console.log(passwordCharacters)
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
