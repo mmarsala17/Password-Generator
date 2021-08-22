@@ -24,6 +24,14 @@ var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to 
 var confirmNumericCharacter = confirm("Click OK to confirm if you would like to have numeric characters");
 var confirmLowerCase = confirm("Click OK to confirm if you would like to have lowercase characters");
 var confirmUpperCase = confirm("Click OK to confirm if you would like to have uppercase characters");
+
+while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
+    alert("You must choose at least one password criteria");
+    var confirmSpecialCharacter = confirm("Click ok to confir if you would like to include special characters");
+    var confirmNumericCharacter = confirm("Click OK to confirm if you would like to have numeric characters");
+    var confirmUpperCase = confirm("Click OK to confirm if you would like to have uppercase characters"); 
+    var confirmLowerCase = confirm("Click OK to confirm if you would like to have lowercase characters");
+}
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
