@@ -52,6 +52,14 @@ if (confirmUpperCase) {
 }
 
 console.log(passwordCharacters)
+
+var randomPassword = ""
+
+for (var i = 0; i < confirmLength; i++) {
+    randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+    console.log(randomPassword)
+}
+return randomPassword;
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
