@@ -5,7 +5,7 @@ var alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 var alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 // Variable confirms
-var confirmLegth = "";
+var confirmLength = "";
 var confirmSpecialCharacter;
 var confirmNumericCharacter;
 var confirmUpperCase;
@@ -13,11 +13,13 @@ var confirmLowerCase;
 
 // Length of password
 function generatePassword() {
-    var confirmLegth = (prompt("Choose how many characters you would like your password to have"));
+    var confirmLength = (prompt("Choose how many characters you would like your password to have"));
+
+while(confirmLength <= 7 || confirmLength >= 129) {
+    alert("Password length must be between 8-128 characters");
+    var confirmLength = (prompt("Choose how many characters you would like your password to have"));
 }
-
-
-
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -32,3 +34,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
