@@ -6,3 +6,6 @@
 
 # Description
 
+##### This is an application that an employee could use to generate a random password based on the password criteria that they have selected.
+
+
